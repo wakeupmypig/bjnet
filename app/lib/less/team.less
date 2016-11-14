@@ -1,0 +1,102 @@
+.team-main{
+  width: 1200px;
+  margin: 100px auto;
+  table{
+    width: 100%;
+    background: #0d0b0c;
+    tr{
+      td{
+        overflow: hidden;
+        img{width: 100%;}
+        .team-info{
+          color: #fff;
+          transform: translateY(120px);
+          transition: all .5s;
+        }
+      }
+    }
+  }
+  .overlay{
+      img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      td:hover{
+        img{
+          -webkit-filter: none;
+          filter: none;
+        }
+        .team-info{
+          color: #fff;
+          transform: translateY(0);
+          transition: all .5s;
+        }
+      }
+  }
+}
+.us-main{
+  width: 1200px;
+  background: #fff;
+  margin: 0 auto;
+  h3{
+    width: 900px;
+    line-height: 60px;
+    margin: 0 auto;
+  }
+  .huoguo{
+    width: 900px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+  }
+  .us-map{
+    width:900px;
+    height: 400px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+  }
+  .us-advice{
+    width: 900px;
+    margin: 0 auto;
+    tr{
+      height: 50px;
+      td{
+        color: #000;
+        line-height: 40px;
+        padding-left: 20px;
+        input{
+          width: 50%;
+          line-height: 40px;
+          border: 1px solid #ccc;
+          padding: 0 10px;
+        }
+        textarea{
+          width: 50%;
+          height: 150px;
+          line-height: 20px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          resize: none;
+        }
+        button{
+          float: right;
+          width: 200px;
+          height: 40px;
+          color: #fff;
+          line-height: 40px;
+          text-align: center;
+          border-radius: 4px;
+          margin-left: 20px;
+        }
+        .btn1{
+          background: #c9302c;
+          border: 1px solid #ac2925;
+        }
+        .btn2{
+          border: 1px solid #2e6da4;
+          background: #337ab7;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,341 @@
+.page-nav{
+  height: 50px;
+  background: #0d0b0c;
+  .nav-main{
+    width: 1200px;
+    margin: 0 auto;
+    .page-logo{
+      display: inline-block;
+      width: 52px;
+      height: 30px;
+      background: url("../images/page-logo.png") no-repeat center;
+      vertical-align: top;
+      margin-top: 10px;
+      h1{
+        text-indent: -9999px;
+      }
+    }
+    .nav-list{
+      display: inline-block;
+      width: 700px;
+      vertical-align: top;
+      li{
+        float: left;
+        min-width: 56px;
+        text-align: center;
+        margin: 0 20px;
+        a{
+          color: #fff;
+          line-height: 50px;
+        }
+      }
+    }
+    .nav-login{
+      color: #fff;
+      line-height: 50px;
+      margin-left: 30px;
+    }
+  }
+}
+.page{
+  background: #fafafa;
+
+  .profile-main{
+    width: 1200px;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 145px auto 100px;
+    .profile-person{
+      position: relative;
+      height: 150px;
+      img{
+        position: absolute;
+        left: 70px;
+        top: -45px;
+        width: 150px;
+        height: 150px;
+      }
+      h5{
+        a{color: #1a1a1a;}
+        position: absolute;
+        left: 260px;
+        top: 60px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    .profile-label{
+      border-bottom: 1px solid #e5e5e5;
+      li{
+        float: left;
+        min-width: 100px;
+        height: 49px;
+
+        line-height: 50px;
+        text-align: center;
+        a{
+          font-size: 18px;
+          color: #666;
+        }
+      }
+      .label-active{
+        background: #7a5e82;
+        a{
+          color: #fff;
+        }
+      }
+    }
+    .profile-tab{
+      width: 1160px;
+      padding-bottom: 170px;
+      margin: 0 auto;
+      .pro-tab-title{
+        font-size: 12px;
+        color: #999;
+        line-height: 50px;
+        border-bottom: 1px solid #e5e5e5;
+        .tab-title1{
+          font-size: 16px;
+          margin-left: 40px;
+          margin-right: 120px;
+        }
+        .tab-title3{
+          padding-right: 12px;
+          margin-right: 40px;
+          cursor: pointer;
+          i{
+            display: inline-block;
+            width: 8px;
+            height: 12px;
+            background-image: url("../images/icon-tab01.png");
+            background-repeat: no-repeat;
+          }
+        }
+      }
+      /*我的资料*/
+      .pro-tab-con{
+        background: #fafafa;
+        .tab-con{
+          width: 580px;
+          padding: 60px 0 30px;
+          margin: 0 auto;
+          .tab-line{
+            margin-bottom: 20px;
+            label{
+              display: inline-block;
+              width: 125px;
+              color: #7b7b7b;
+              line-height: 40px;
+            }
+            input[type="text"],input[type="password"]{
+              width: 298px;
+              height: 38px;
+              font-size: 14px;
+              border: 1px solid #b3b3b3;
+              border-radius: 3px;
+              text-indent: 8px;
+              margin-right: 60px;
+            }
+            .tab-validate{
+              font-size: 12px;
+              color: #999;
+            }
+            .radio-box{
+              display: inline-block;
+              width: 300px;
+              span{
+                display: inline-block;
+                width: 78px;
+                height: 38px;
+                font-size: 14px;
+                border: 1px solid #b3b3b3;
+                border-radius: 3px;
+                line-height: 40px;
+                text-align: center;
+                cursor: pointer;
+                margin-right: 20px;
+              }
+              .checked{
+                background: #fce7d6;
+              }
+            }
+            .select-box{
+              display: inline-block;
+              select{
+                width: 138px;
+                height: 38px;
+                border: 1px solid #b3b3b3;
+                border-radius: 3px;
+                font-size: 14px;
+                text-indent: 8px;
+                margin-right: 8px;
+              }
+            }
+          }
+          .tab-btns{
+            text-align: center;
+            a{
+              display: inline-block;
+              width: 78px;
+              height: 38px;
+              color: #666;
+              line-height: 40px;
+            }
+            .btn-save{
+              color: #fff;
+              background: #7a5e82;
+              border: 1px solid #b3b3b3;
+              border-radius: 3px;
+            }
+          }
+          .tab-code{
+            display: inline-block;
+            width: 298px;
+            height: 38px;
+            background: #fff;
+            border: 1px solid #b3b3b3;
+            border-radius: 3px;
+            margin-right: 60px;
+            input[type="text"]{
+              width: 200px;
+              border: none;
+              margin-right: 0;
+            }
+            a{
+              display: inline-block;
+              width: 92px;
+              color: #7b7b7b;
+              text-align: center;
+            }
+          }
+          .tab-img{
+            width: 280px;
+            margin: 0 auto 60px;
+            img{
+              width: 150px;
+              height: 150px;
+              background: #ababab;
+              margin-right: 45px;
+            }
+            .tab-img-up{
+              display: inline-block;
+              position: relative;
+              width: 80px;
+              height: 40px;
+              button{
+                width: 80px;
+                height: 40px;
+                font-size: 12px;
+                color: #666;
+                background: #e6e6e6;
+                border: 1px solid #b3b3b3;
+              }
+            }
+            input{
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 10;
+              width: 80px;
+              height: 40px;
+              font-size: 12px;
+              color: #666;
+              background: #e6e6e6;
+              opacity: 0;
+              filter:alpha(opacity=0);
+            }
+          }
+        }
+      }
+    }
+
+  }
+  /*我的收藏*/
+  .profile-collect{
+    background: #fff;
+    ul{margin-left: 10px;}
+    ul li{
+      float: left;
+      width: 216px;
+      margin: 10px;
+      .collect-img{
+        width: 216px;
+        height: 216px;
+      }
+      .collect-title{
+        color: #1a1a1a;
+        line-height: 32px;
+        margin-left: 20px;
+      }
+      .collect-heart{
+        color: #c85656;
+        line-height: 16px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        span{
+          display: inline-block;
+          width: 16px;
+          height: 15px;
+          background: url("../images/icon-heart.png") no-repeat center;
+          vertical-align: top;
+          margin-right: 10px;
+        }
+      }
+      .collect-author{
+        height: 40px;
+        background: #f3f3f3;
+        color: #666;
+        padding: 10px;
+        img{
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+        }
+        a{
+          color: #1a1a1a;
+        }
+      }
+    }
+  }
+  /*分页*/
+  .profile-num{
+    background: #fff;
+    overflow: hidden;
+    ul{
+      width: 590px;
+      margin: 60px auto 80px;
+      li{
+        float: left;
+        min-width: 28px;
+        height: 28px;
+        color: #666;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        margin-right: 10px;
+        input{
+          width: 58px;
+          height: 28px;
+          text-align: center;
+          vertical-align: top;
+          border: none;
+          outline: none;
+        }
+        .num-go{
+          display: block;
+          width: 28px;
+          height: 28px;
+          font-size: 12px;
+          color: #666;
+          line-height: 28px;
+          font-weight: normal;
+        }
+      }
+      .omit{
+        border: none;
+      }
+    }
+  }
+}

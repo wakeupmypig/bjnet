@@ -1,0 +1,63 @@
+<div class="page-nav" ng-if="!index">
+    <div class="nav-main clearfix">
+        <a class="page-logo" ui-sref="include.content">
+            <h1>彼迹</h1>
+        </a>
+        <ul class="nav-list clearfix">
+            <li><a ui-sref="include.content">首页</a></li>
+            <li><a ui-sref="include.team">团队简介</a></li>
+            <li><a ui-sref="include.admire">作品欣赏</a></li>
+            <li><a ui-sref="include.share">技巧分享</a></li>
+            <li><a ui-sref="include.upload">发表文章</a></li>
+            <li><a ui-sref="include.us">关于我们</a></li>
+        </ul>
+        <a class="nav-login fr" ng-if="false" ui-sref="include.regist">注册</a>
+        <a class="nav-login fr" ng-if="false" ui-sref="include.login">登录</a>
+        <a class="nav-login fr" ng-if="true" ui-sref="include.content">退出</a>
+        <a class="nav-login fr" ng-if="true" ui-sref="include.base">小小启明星</a>
+    </div>
+</div>
+<div class="index-header" ng-if="index">
+    <div class="index-nav">
+        <a class="index-logo" ui-sref="include.content">
+            <h1>彼迹</h1>
+        </a>
+        <div class="nav-list menu-box clearfix">
+            <a class="nav-slide" href="javascript:;" index-menu-box></a>
+            <ul class="clearfix">
+                <li><a ui-sref="include.us">关于我们</a></li>
+                <li><a ui-sref="include.upload">发表文章</a></li>
+                <li><a ui-sref="include.admire">作品欣赏</a></li>
+                <li><a ui-sref="include.share">技巧分享</a></li>
+                <li><a ui-sref="include.team">团队简介</a></li>
+                <li><a ui-sref="include.content">首页</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="index-banner">
+        <img src="lib/images/index-world.png" alt="">
+        <p>will give way to these who have goals and vision.</p>
+    </div>
+</div>
+
+
+
+
+
+<div ui-view></div>
+<div class="footer">
+    <div class="footer-info">
+        <p class="foot-nav">
+            <a href="">团队简介</a>
+            <a href="">作品欣赏</a>
+            <a href="">技巧分享</a>
+            <a href="">发表文章</a>
+            <a href="">关于我们</a>
+        </p>
+        <p>地址：北京市西城区宣武门</p>
+        <p>电话：13913911391</p>
+        <p>QQ : 841581124</p>
+    </div>
+</div>
+

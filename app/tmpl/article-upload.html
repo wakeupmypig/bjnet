@@ -1,0 +1,79 @@
+
+<div class="wrapper page">
+    <div class="article-main">
+        <img class="article-img" src="../lib/images/img-article.jpg" alt="">
+        <div class="article-search">
+            <a class="article-choice" >发布文章</a>
+            <a class="article-choice choiced">上传作品</a>
+        </div>
+        <div class="upload-info">
+            <table>
+                <tr>
+                    <td><label>文章名称</label></td>
+                    <td><input class="upload-title" type="text"></td>
+                    <td><p>还可以输入12个字</p></td>
+                </tr>
+                <tr>
+                    <td><label>文章性质</label></td>
+                    <td>
+                        <input gender-checked class="upload-nature checked" type="button" value="原创">
+                        <input gender-checked class="upload-nature" type="button" value="自译">
+                        <input gender-checked class="upload-nature" type="button" value="转载">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>文章分类</label></td>
+                    <td>
+                        <select class="up-line" name="" id="">
+                            <option value="">作品类别</option>
+                            <option value="">传记类</option>
+                            <option value="">诗歌类</option>
+                            <option value="">散文类</option>
+                            <option value="">小说类</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">上传时间</option>
+                            <option value="">近一个月</option>
+                            <option value="">近一周</option>
+                            <option value="">昨天</option>
+                            <option value="">今天</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>文章封面</label></td>
+                    <td>
+                        <div class="upload-cover">
+                            <input type="file">
+                            上传封面
+                        </div>
+                        <p class="upload-coverps">封面要求 : 270px*180px，大小不超过80kb，jpg格式，RGB模式</p>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>文章简介</label></td>
+                    <td>
+                        <textarea>
+
+                        </textarea>
+                    </td>
+                    <td>还可以输入12个字</td>
+                </tr>
+                <tr>
+                    <td><label>文章正文</label></td>
+                    <td colspan="2">
+                        <div class="upload-context"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="upload-btns clearfix">
+            <input class="btn-puslish fr" type="button" value="发布">
+            <input class="fr" type="button" value="预览">
+            <input class="fr" type="button" value="草稿">
+        </div>
+    </div>
+</div>

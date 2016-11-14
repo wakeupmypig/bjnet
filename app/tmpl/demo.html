@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html,
+        body {
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: "微软雅黑", Tahoma, Helvetica, Arial, sans-serif;
+        }
+        ul,
+        ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+        }
+        img {
+            vertical-align: middle;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        .clearfix:after {
+            display: block;
+            clear: both;
+            height: 0;
+            visibility: hidden;
+            content: " ";
+        }
+        .fl {
+            float: left;
+        }
+        .fr {
+            float: right;
+        }
+
+        .share-egs {
+            overflow: hidden;
+        }
+        .share-egs ul {
+            width: 1134px;
+            margin: 0 auto 84px;
+        }
+        .share-egs ul li {
+            position: relative;
+            float: left;
+            width: 353px;
+            height: 236px;
+            background: #fff;
+            padding: 8px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .share-egs ul li a {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: block;
+            width: 0;
+            height: 0;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="share-egs" id="egs">
+    <ul class="clearfix">
+        <li>
+            <img src="../lib/images/img-sites1.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites2.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites3.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites4.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites5.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites6.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites7.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites1.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+        <li>
+            <img src="../lib/images/img-sites2.jpg" alt="" width="353" height="236">
+            <a id="mask" href="#"></a>
+        </li>
+    </ul>
+</div>
+
+
+<script type="text/javascript">
+    var list = document.getElementById('egs');
+    var oLis = list.getElementsByTagName('li');
+    var mask = list.getElementsByTagName('a');
+    var boxWidth = 353;
+    var boxHeight = 236;
+    for(var i=0;i<oLis.length;i++){
+        oLis[i].index = i;
+        oLis[i].onmouseenter = function(e){
+            e = e || window.event;
+            maskShow(this.index,e);
+        }
+        oLis[i].onmouseleave = function(){
+            maskHide(this.index);
+        }
+    }
+    function maskHide(n){
+        var a = parseFloat(mask[n].style.width);
+        if(a < boxWidth){
+            mask[n].style.width = 0;
+            mask[n].style.height = 0;
+            mask[n].style.marginTop = 0;
+            mask[n].style.marginLeft = 0;
+        }
+        mask[n].style.width = 0;
+        mask[n].style.height = 0;
+        mask[n].style.marginTop = 0;
+        mask[n].style.marginLeft = 0;
+    }
+    function maskShow(n){
+        var duration = 300;
+        var interval = 10;
+
+        var step = (boxWidth/duration)*interval;
+        var maskWidth = 0;
+        var maskHeight = 0;
+        var timer = setInterval(function(){
+            if(maskWidth >= boxWidth){
+                mask[n].style.width = boxWidth + "px";
+                mask[n].style.height = boxHeight + "px";
+                clearInterval(timer);
+                return;
+            }
+            maskWidth += step;
+            maskHeight = (maskWidth*boxHeight)/boxWidth;
+            mask[n].style.width = maskWidth + "px";
+            mask[n].style.height = maskHeight + "px";
+            mask[n].style.marginLeft = -maskWidth/2 + "px";
+            mask[n].style.marginTop = -maskHeight/2 + "px";
+        },interval);
+    }
+</script>
+</body>
+</html>
